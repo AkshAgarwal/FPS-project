@@ -43,7 +43,8 @@ public class PlayerMOvement : MonoBehaviour
         controller.Move(move*speed*Time.deltaTime);
         if(Input.GetKeyDown(KeyCode.Space)&&isGrounded)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        Debug.Log("Pressed");
+        velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
