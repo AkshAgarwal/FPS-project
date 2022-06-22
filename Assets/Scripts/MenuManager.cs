@@ -17,7 +17,12 @@ public class MenuManager : MonoBehaviour
             mm = this;
         }
         ispaused = false;
-        pausemenu.SetActive(false);
+        if (pausemenu != null)
+        {
+            pausemenu.SetActive(false); 
+        }
+        if(hud!=null)
+            
         hud.SetActive(true);
         winScene.SetActive(false);
         Time.timeScale = 1f;
@@ -38,10 +43,17 @@ public class MenuManager : MonoBehaviour
         }
     }
     public void pause()
-    {   
+    {
+        if (pausemenu != null)
+        {
             Time.timeScale = 0f;
             hud.SetActive(false);
             pausemenu.SetActive(true);
+        }
+        else
+        {
+            return;
+        }
         Cursor.lockState = CursorLockMode.None;
     }
     public void Resume()
