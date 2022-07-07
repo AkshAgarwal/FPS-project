@@ -8,6 +8,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject pausemenu;
     [SerializeField] GameObject winScene;
     [SerializeField] bool ispaused;
+
+    [SerializeField] private GameObject nextButton;
     // Start is called before the first frame update
     public static MenuManager mm=null;
     private void Start()
@@ -21,11 +23,23 @@ public class MenuManager : MonoBehaviour
         {
             pausemenu.SetActive(false); 
         }
-        if(hud!=null)
-            
-        hud.SetActive(true);
-        winScene.SetActive(false);
-        Time.timeScale = 1f;
+
+        if (hud != null)
+        {
+            hud.SetActive(true);
+            winScene.SetActive(false);
+            Time.timeScale = 1f;
+        }
+
+        if (SceneManager.GetActiveScene().name == "GameScene")
+        {
+            nextButton.SetActive(true);
+        }
+        else
+        {
+            nextButton.SetActive(false);
+        }
+        
     }
     private void Update()
     {
@@ -89,5 +103,10 @@ public class MenuManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         winScene.SetActive(true);
         hud.SetActive(false);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene("OfficeScene");
     }
 }

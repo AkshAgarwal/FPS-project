@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4111513947928342}
   - component: {fileID: 198758407891691768}
   - component: {fileID: 199866866105915768}
-  - component: {fileID: 1778307370513227768}
   m_Layer: 0
   m_Name: BulletTracer
   m_TagString: Untagged
@@ -4876,45 +4875,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &1778307370513227768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735467526708890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f232d25db074cc4ba887924930510a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnReleasedEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 198758407891691768}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Stop
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnUseEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 198758407891691768}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
