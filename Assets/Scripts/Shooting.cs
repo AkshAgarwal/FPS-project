@@ -22,7 +22,7 @@ public class Shooting : MonoBehaviour
     {
         a = gun.GetComponent<Animator>();
         MaxClipAmmo = 7;
-        MaxAvailableAmmo = 35;
+        MaxAvailableAmmo = 60;
         ClipAmmo = MaxClipAmmo;
         AvailableAmmo=MaxAvailableAmmo;
         AmmoCount.SetText(ClipAmmo + "/" + AvailableAmmo);
