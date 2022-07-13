@@ -1147,11 +1147,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c109f7a28ebd04a86084f731a6322c, type: 3}
---- !u!198 &121859475 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5251870386378940136, guid: a52ff6ceb9075e5429eb5acb3b39f04c, type: 3}
-  m_PrefabInstance: {fileID: 1751648082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &122572749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5354,6 +5349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbc921e76de47404897b9ee2df795603, type: 3}
+--- !u!1 &631404822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8511605338164646945, guid: e0a1cf50f598c3a44a7653e62252beab, type: 3}
+  m_PrefabInstance: {fileID: 1762699656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &636089103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32434,11 +32434,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
---- !u!198 &1435656189 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5341346065226734583, guid: a52ff6ceb9075e5429eb5acb3b39f04c, type: 3}
-  m_PrefabInstance: {fileID: 1751648082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1437393966
 Mesh:
   m_ObjectHideFlags: 0
@@ -38689,17 +38684,9 @@ PrefabInstance:
       value: w
       objectReference: {fileID: 0}
     - target: {fileID: 5251870385733681597, guid: a52ff6ceb9075e5429eb5acb3b39f04c, type: 3}
-      propertyPath: Tracer
-      value: 
-      objectReference: {fileID: 1435656189}
-    - target: {fileID: 5251870385733681597, guid: a52ff6ceb9075e5429eb5acb3b39f04c, type: 3}
       propertyPath: AmmoCount
       value: 
       objectReference: {fileID: 210397811}
-    - target: {fileID: 5251870385733681597, guid: a52ff6ceb9075e5429eb5acb3b39f04c, type: 3}
-      propertyPath: MuzzleFlash
-      value: 
-      objectReference: {fileID: 121859475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a52ff6ceb9075e5429eb5acb3b39f04c, type: 3}
 --- !u!1001 &1762699656
@@ -38713,6 +38700,10 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 2004805356}
+    - target: {fileID: 5612646614053841986, guid: e0a1cf50f598c3a44a7653e62252beab, type: 3}
+      propertyPath: nextButton
+      value: 
+      objectReference: {fileID: 631404822}
     - target: {fileID: 5612646614053841987, guid: e0a1cf50f598c3a44a7653e62252beab, type: 3}
       propertyPath: m_Pivot.x
       value: 0
